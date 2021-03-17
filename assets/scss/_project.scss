@@ -1,8 +1,26 @@
- .project{
-    background: $black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
+ .project {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     &__wrapper {
+         &_content {
+             position: relative;
+             .icon{
+                 width: 120px;
+             }
+         }
+     }
+     .audio-detail{
+         .duration-wrapper{
+             max-width: 800px;
+             height: 8px;
+             background-color: antiquewhite;
+             .duration-timeline{
+                 background-color: black;
+                 max-width: 0%;
+                 height: 8px;
+             }
+         }
+     }
+    }
